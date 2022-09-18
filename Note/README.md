@@ -4,15 +4,15 @@ Curriculum
 ---
 |  | 一 | 二 | 三 | 四 | 五 |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| 1     | 淡江Meeting     |      |      |      |      |
-| 2     | 淡江Meeting     |      |      | 決策分析與管理(楊東育)     |      |
-| 3     | 淡江Meeting     |      |      | 決策分析與管理(楊東育)     |      |
-| 4     | 淡江Meeting     |      |      | 決策分析與管理(楊東育)     |      |
-| 5     | 深度學習(廖文華)     | 資訊理論基礎與應用(張肇明)     | 專題演講(共同)     |      | 淡江Meeting     |
-| 6     | 深度學習(廖文華)     | 資訊理論基礎與應用(張肇明)     | 專題演講(共同)     |      | 淡江Meeting     |
-| 7     | 深度學習(廖文華)     | 資訊理論基礎與應用(張肇明)     | 專題演講(共同)     |      | 淡江Meeting     |
-| 8     |      |      | Lab Meeting     |      | 淡江Meeting     |
-| 9     |      |      | Lab Meeting     |      | 淡江Meeting     |
+| 1     | TKU Meeting     |      |      |      |      |
+| 2     | TKU Meeting     |      |      | Decision Management(Dr. Yang)     |      |
+| 3     | TKU Meeting     |      |      | Decision Management(Dr. Yang)     |      |
+| 4     | TKU Meeting     |      |      | Decision Management(Dr. Yang)     |      |
+| 5     | Deep Learning(Dr. Liao)     | Graph Theory(Dr. Chang)     | Speech(IDS)     |      | TKU Meeting     |
+| 6     | Deep Learning(Dr. Liao)     | Graph Theory(Dr. Chang)     | Speech(IDS)     |      | TKU Meeting     |
+| 7     | Deep Learning(Dr. Liao)     | Graph Theory(Dr. Chang)     | Speech(IDS)     |      | TKU Meeting     |
+| 8     |      |      | Lab Meeting     |      | TKU Meeting     |
+| 9     |      |      | Lab Meeting     |      | TKU Meeting     |
 
 
 
