@@ -1,0 +1,126 @@
+# TQC901
+file_stream = open('write.txt', 'w')
+
+for i in range(5):
+    file_stream.write(input() + '\n')
+
+file_stream.close()
+
+# TQC902
+file_stream = open('read.txt', 'r')
+
+total = 0
+num = file_stream.read().split(' ')
+
+for i in range(len(num)):
+    total += int(num[i])
+
+print(total)
+
+file_stream.close()
+
+# TQC903
+with open('data.txt', 'a', encoding = 'UTF-8') as fs:
+    for i in range(5):
+        fs.write('\n' + input())
+
+print('Append completed!')
+print('Content of "data.txt":')
+
+with open('data.txt', 'r', encoding = 'UTF-8') as fs:
+    for i in fs:
+        print(i, end = '')
+
+# TQC904
+name, height, weight, data = [], [], [], []
+ 
+file_stream = open('read.txt', 'r', encoding = 'UTF-8')
+for line in file_stream:
+    print(line)
+    data = line.replace('\n', '').split(' ')
+    name.append(data[0])
+    height.append( int(data[1]) )
+    weight.append( int(data[2]) )
+print("Average height: %.2f" % (sum(height) / len(height)))
+print("Average weight: %.2f" % (sum(weight) / len(weight)))
+TT = height.index(max(height))
+print("The tallest is {} with {:.2f}cm".format(name[TT],height[TT]))
+HH = weight.index(max(weight))
+print("The heaviest is {} with {:.2f}kg".format(name[HH], weight[HH]))
+file_stream.close()
+
+# TQC905
+file_stream, s = input(), input()
+with open(file_stream, 'r', encoding = 'UTF-8') as fs:
+    data=fs.read()
+ 
+print("=== Before the deletion")
+print(data)
+ 
+data = data.replace(s, "")
+print("=== After the deletion")
+print(data)
+with open(file_stream, 'w', encoding = 'UTF-8') as fs:
+    fs.write(data)
+
+# TQC906
+file_stream, str1, str2 = input(), input(), input()
+with open(file_stream, 'r', encoding = 'UTF-8') as fs:
+    data = fs.read()
+ 
+print("=== Before the replacement")
+print(data)
+ 
+data = data.replace(str1, str2)
+print("=== After the replacement")
+print(data)
+
+# TQC907
+file_stream = input()
+fs = open(file_stream, 'r', encoding = 'UTF-8')
+Line, Word, Char = 0, 0, 0
+for line in fs:
+  Line += 1
+  line_split = line.split() 
+  Word += len(line_split)
+  for i in range(len(line_split)):
+      Char += len(line_split[i])
+    
+print(Line,"line(s)")
+print(Word,"word(s)")
+print(Char,"character(s)")
+fs.close()
+
+# TQC908
+file_stream = input()
+n = int(input())
+with open(file_stream, "r", encoding = "UTF-8") as fs:
+    data = sorted(fs.read().split())
+for i in sorted(set(data)):
+    if data.count(i) == n:
+        print(i)
+
+
+# TQC909
+with open("data.dat", "w", encoding = "UTF-8") as fs:
+    for i in range(5):
+        fs.write(input() + "\n")
+ 
+print('The content of "data.dat":')
+with open("data.dat", "r", encoding = "UTF-8") as fs:
+    for i in fs:
+        print(i)
+
+# TQC910
+Male, Female = 0, 0
+with open('read.dat', 'r', encoding = 'UTF-8') as fs:
+  for line in fs:
+    print(line)
+    line_split = line.split()
+    if(line_split[2]=="1"):
+        Male += 1
+    elif(line_split[2]=="0"):
+        Female += 1
+ 
+print('Number of males:', Male)
+print('Number of females:', Female)
